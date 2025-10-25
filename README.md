@@ -1,4 +1,4 @@
-# 🏭 Manufacturing Defect AI Agent
+# 🏭 EvoFix
 
 AI-powered defect management system using Natural Language Processing for manufacturing plants. Workers report defects in plain English, and AI automatically categorizes, prioritizes, routes to teams, and suggests solutions.
 
