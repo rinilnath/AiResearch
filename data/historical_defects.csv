@@ -1,0 +1,16 @@
+id,timestamp,description,category,priority,resolution,resolution_time_hours,assigned_team
+1,2024-10-01 08:30,Conveyor belt motor overheating on Line 2,Electrical,HIGH,Replaced motor bearings and added cooling fan,4,Maintenance
+2,2024-10-02 14:15,Paint finish uneven on batch 4521,Quality Control,MEDIUM,Adjusted spray nozzle pressure and distance,2,Quality Control
+3,2024-10-03 09:00,Emergency stop button not responding on Station 7,Safety,CRITICAL,Replaced emergency stop switch and tested all safety systems,1,Safety
+4,2024-10-04 11:20,Robotic arm positioning error +2mm on X-axis,Mechanical,HIGH,Recalibrated arm sensors and updated firmware,3,Engineering
+5,2024-10-05 16:45,Packaging material jamming in sealer,Mechanical,MEDIUM,Cleaned rollers and adjusted tension settings,1.5,Maintenance
+6,2024-10-08 07:30,Pressure gauge reading inconsistent on Hydraulic System A,Mechanical,HIGH,Replaced pressure sensor and recalibrated,2,Maintenance
+7,2024-10-09 13:00,Product dimensions out of spec - width +0.5mm,Quality Control,HIGH,Adjusted die settings and verified with CMM,4,Quality Control
+8,2024-10-10 10:15,Coolant leak under CNC machine 5,Mechanical,MEDIUM,Replaced coolant hose and checked all connections,2,Maintenance
+9,2024-10-11 15:30,PLC error code E47 on assembly line controller,Electrical,CRITICAL,Reset PLC and updated control program,6,Engineering
+10,2024-10-14 08:00,Welding torch gas flow irregular,Mechanical,MEDIUM,Cleaned gas nozzle and replaced regulator,1,Maintenance
+11,2024-10-15 12:45,Safety guard sensor misaligned on Press 2,Safety,HIGH,Realigned sensor bracket and tested interlock,1.5,Safety
+12,2024-10-16 09:30,Vibration detected in spindle motor,Mechanical,HIGH,Replaced worn spindle bearings,5,Maintenance
+13,2024-10-17 14:00,Barcode scanner not reading labels,Electrical,MEDIUM,Cleaned scanner lens and updated firmware,1,Maintenance
+14,2024-10-18 11:00,Hydraulic oil pressure dropping during cycle,Mechanical,HIGH,Found and fixed hydraulic line leak,3,Maintenance
+15,2024-10-21 10:30,Dust accumulation in control cabinet causing overheating,Electrical,MEDIUM,Cleaned cabinet and installed air filter,2,Maintenance
