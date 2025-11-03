@@ -334,9 +334,11 @@ elif page == "📊 Dashboard":
             priority_df = pd.DataFrame(
                 list(stats["by_priority"].items()), columns=["Priority", "Count"]
             )
+            # Only sort by priorities that exist in the data
             priority_order = ["CRITICAL", "HIGH", "MEDIUM", "LOW"]
+            existing_priorities = [p for p in priority_order if p in priority_df["Priority"].values]
             priority_df["Priority"] = pd.Categorical(
-                priority_df["Priority"], categories=priority_order, ordered=True
+                priority_df["Priority"], categories=existing_priorities, ordered=True
             )
             priority_df = priority_df.sort_values("Priority")
 
