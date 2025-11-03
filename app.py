@@ -122,7 +122,7 @@ if page == "📝 Report Defect":
             if st.button("🎤 Use Sample Voice Input"):
                 st.session_state.defect_text = "CNC machine 7 spindle motor making unusual grinding noise and vibration detected. May need bearing replacement soon."
                 st.rerun()
-        
+
         else:  # Image + Text
             st.info("📸 Image upload feature - In production, this would use OCR")
             uploaded_file = st.file_uploader("Upload defect image", type=['png', 'jpg', 'jpeg'])
@@ -282,7 +282,7 @@ if page == "📝 Report Defect":
                         with col_b:
                             st.metric("Similarity", f"{case['similarity_score']*100:.0f}%")
                             st.caption(f"Priority: {case['priority']}")
-                        
+
                         if case.get('resolution'):
                             st.success(f"✅ Resolution: {case['resolution']}")
                         st.markdown("---")
@@ -620,5 +620,7 @@ elif page == "📈 Reports & Analytics":
 
 # Footer
 st.sidebar.markdown("---")
-st.sidebar.markdown("### 🏭 Powered by AI")
-st.sidebar.caption("Manufacturing Defect Management System")
+st.sidebar.markdown("### 🚀 EVOFIX I")
+st.sidebar.caption("Manufacturing Intelligence Platform")
+st.sidebar.caption("Mission: Defect Detection & Resolution")
+st.sidebar.caption("© 2025 EVOFIX™ | Version 1.0")
