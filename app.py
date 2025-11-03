@@ -269,6 +269,24 @@ if page == "📝 Report Defect":
             for i, action in enumerate(actions, 1):
                 st.write(f"{i}. {action}")
 
+        # 🆕 ADD THIS NEW SECTION HERE
+        if result.get("similar_cases") and len(result["similar_cases"]) > 0:
+            with st.expander("🔍 Similar Past Defects (AI-Found)", expanded=True):
+                st.markdown("*Based on semantic similarity search*")
+                for i, case in enumerate(result["similar_cases"], 1):
+                    with st.container():
+                        col_a, col_b = st.columns([3, 1])
+                        with col_a:
+                            st.markdown(f"**{i}. {case['ticket_id']}** - {case['category']}")
+                            st.caption(case['description'][:100] + "..." if len(case['description']) > 100 else case['description'])
+                        with col_b:
+                            st.metric("Similarity", f"{case['similarity_score']*100:.0f}%")
+                            st.caption(f"Priority: {case['priority']}")
+                        
+                        if case.get('resolution'):
+                            st.success(f"✅ Resolution: {case['resolution']}")
+                        st.markdown("---")
+
         # Clear button
         if st.button("🔄 Report Another Defect"):
             del st.session_state.last_result
