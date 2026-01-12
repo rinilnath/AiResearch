@@ -2,7 +2,13 @@
 Manufacturing Defect AI Agent - Main Application
 Streamlit UI for defect management system
 """
+import streamlit as st
 
+# Health check endpoint for keep-alive monitoring
+if st.query_params.get("health") == "true":
+    st.write("OK")
+    st.stop()
+    
 import streamlit as st
 import pandas as pd
 import plotly.express as px
